@@ -281,33 +281,103 @@
 
          <div class= "space-x-4 flex">
 
-                <div class="w-3/5 bg-[#115414] flex rounded-xl">
+                <div class="w-3/5 bg-[#115414] flex rounded-xl justify-around ">
                 <div class="mx-5 my-10 space-y-4">
                     <img class="w-40" src="c2-assets/dawat-logo.png" alt="">
-                    <p class="bg-[#63B76D] rounded-xl">Cook Exotic Dishes</p>
+                    <p class="bg-[#63B76D] rounded-xl text-white px-6 py-3">Cook Exotic Dishes</p>
                     <h1 class="font-bold text-2xl text-white">UP to 20% OFF</h1>
                 </div>
-                <div class="w-64">
+                <div class="w-64 mt-8 ">
                     <img src="c2-assets/dawat-mock-up.png" alt="">
                 </div>
 
             </div>
 
-            <div class="bg-[#102861] flex rounded-xl">
-                <div class="mx-5 my-10 space-y-4">
+            <div class="bg-[#102861] flex rounded-xl justify-around">
+                <div class="mx-5 my-10 space-y-6">
                     <img class="w-16" src="c2-assets/india-gate-logo.png" alt="">
-                    <p class="bg-[#2A4D97] rounded-xl">World’s No.1 Rice</p>
+                    <p class="bg-[#2A4D97] rounded-xl text-white px-3 py-3">World’s No.1 Rice</p>
                     <h1 class="font-bold text-2xl text-white">UP to 40% OFF</h1>
                 </div>
-                <div class="w-64">
+                <div class="w-32 mt-10 mr-3">
                     <img src="c2-assets/india-gate-mock-up.png" alt="">
                 </div>
             </div>
          </div>
             
           </section>
+
+          <!-- FAQ section -->
+          <section class="lg:max-w-screen-lg mx-auto my-10 lg:mb-56">
+            <h1 class="text-3xl font-semibold text-green-600 mb-8 ml-2">FAQs</h1>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">How do I place an order?</div>
+                <div class="collapse-content">
+                  <p>You can place an order by browsing our categories, adding items to your cart, and proceeding to checkout. Simply enter your delivery details, choose a payment method, and confirm your order.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What are the delivery options and timings?</div>
+                <div class="collapse-content">
+                  <p>We offer same-day and scheduled delivery options. Orders placed before 12:00 pm are delivered on the same day, while others are scheduled for the next available slot</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What payment methods do you accept?</div>
+                <div class="collapse-content">
+                  <p>We accept credit/debit cards, mobile banking, and cash on delivery (COD). You can select your preferred method during checkout.</p>
+                </div>
+              </div>
+          </section>
+
+          
     </main>
-    <footer></footer>
+    <footer class=" bg-green-700">
+
+       <!-- news subscription -->
+        <section class="grid grid-cols-2 bg-[#EFEBE3] lg:max-w-screen-lg mx-auto my-8 rounded-xl -translate-y-1/2 ">
+            <div class="w-3/5 mx-auto my-5">
+                <img src="c2-assets/vegetable-busket.png" alt="">
+            </div>
+            <div class="my-8 space-y-4">
+                <h1 class="text-2xl font-semibold">Get Grocery News!</h1>
+                <p class="text-sm font-light">Exclusive training tips, ticks, product deals and more.</p>
+                <input type="email" class="w-3/4 h-14 px-5 rounded-xl" placeholder="Enter email...">
+                <button class="btn btn-success text-white block" type="button">Subscribe</button>
+            </div>
+           </section>
+
+         <!-- footer section -->
+        <div class="grid grid-cols-3 text-white lg:max-w-screen-lg mx-auto pb-20 ">
+            <div class="mx-auto space-y-3">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="font-light">Discover a world of treats, toys, and <br>
+                     groceries handpicked for your family & friends</p>
+            </div>
+            <div class="mx-auto">
+                <ul class=" space-y-5">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="mx-auto space-y-3">
+                <div>
+                    <h1>Follow Us</h1>
+                </div>
+                <div class="grid grid-cols-4 gap-6 w-2/3 ">
+                
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        
+    </footer>
     
 </body>
 </html>
