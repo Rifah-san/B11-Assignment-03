@@ -49,9 +49,9 @@
     <header class=" bg-gradient-to-t from-[#EFEBE3] to-white">
 
         <!-- navbar -->
-        <div class="navbar bg-white">
+        <div class="navbar bg-white lg:max-w-screen-lg lg:mx-auto sm:max-w-screen-sm max-w-[95%] mx-auto">
             <div class="navbar-start">
-              <div class="dropdown">
+              <!-- <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,8 +73,9 @@
                   <li><a>Services</a></li>
                   <li><a>Contact us</a></li>
                 </ul>
-              </div>
-              <a class="btn btn-ghost text-xl"><img src="c2-assets/logo-header.png" alt=""></a>
+              </div> -->
+              <a ><img class="hidden lg:block w-2/3" src="c2-assets/logo-header.png" alt=""></a>
+              <a ><img class="block lg:hidden w-2/3" src="c2-assets/nav-leaf.png" alt=""></a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -83,19 +84,42 @@
                 <li><a>Contact us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
+            <div class="navbar-end space-x-4">
                 <i class="fa-solid fa-magnifying-glass hidden lg:block  " ></i>
-                <i class="fa-solid fa-cart-shopping    hidden lg:block  "></i>
-              <a class="btn btn-outline btn-success    hidden lg:block ">Login</a>
-              <a class="btn btn-success text-white     hidden lg:block">Register</a>
+                <i class="fa-solid fa-cart-shopping  hidden lg:block  "></i>
+              <a class="btn btn-outline btn-success btn-sm hidden lg:flex ">Login</a>
+              <a class="btn btn-success text-white btn-sm hidden lg:flex">Register</a>
             </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-green-600">
+                  <li><a>Product</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
           </div>
 
         <!-- banner section -->
          <section class="mt-20 lg:max-w-screen-lg lg:mx-auto">
             <div class="space-y-8 mx-auto text-center">
-                <div class="w-3/6 space-y-8 mx-auto">
-                    <h1 class="font-semibold text-4xl">Freshness 
+                <div class="lg:w-3/6 space-y-8 mx-auto w-[90%]">
+                    <h1 class="font-semibold lg:text-4xl text-3xl ">Freshness 
                         <span class="text-green-500">You Can Count</span> On, Prices You’ll Love!</h1>
                     <p class="text-sm font-extralight">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
                 </div>
@@ -105,7 +129,7 @@
     </header>
     <main>
         <!-- services section -->
-        <section class="my-24 lg:max-w-screen-lg mx-auto space-y-8">
+        <section class="my-24 lg:max-w-screen-lg lg:mx-auto space-y-8 sm:max-w-screen-sm max-w-[95%]">
             <h1 class="text-green-600 font-semibold text-2xl">Services</h1>
             <!-- card container -->
             <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-8 lg:space-x-5">
@@ -146,26 +170,26 @@
         </section>
 
         <!-- popular products -->
-         <section class="my-28 bg-[#EFEBE3] py-20">
-            <h1 class="lg:max-w-screen-lg mx-auto mb-5 text-2xl font-semibold text-green-600">Popular Products</h1>
+         <section class="my-28 bg-[#EFEBE3] py-20 ">
+            <h1 class="lg:max-w-screen-lg lg:mx-auto mb-5 text-2xl font-semibold text-green-600 mx-auto">Popular Products</h1>
             
              <!-- grid container column-2 -->
-            <div class="grid lg:grid-cols-3 gap-3 sm:grid-cols-1 lg:max-w-screen-lg mx-auto">
+            <div class="grid lg:grid-cols-3 lg:gap-3 sm:grid-cols-1 gap-5 lg:max-w-screen-lg lg:mx-auto">
 
                 <!-- discount column -->
-                <div class="bg-gradient-to-br from-green-500 to-white relative rounded-xl">    
+                <div class="bg-gradient-to-br from-green-500 to-white relative rounded-xl sm:max-w-screen-sm max-w-[95%]  mx-auto ">    
                     <div class="mx-5 my-10 space-y-3">
                         <h1 class="text-2xl font-semibold text-white">30% off</h1>
                         <p class="text-sm font-extralight">Discover a world of treats, toys and essential handpicked food</p>
                         <button class="btn btn-ghost bg-white">Buy Now</button>
                     </div>
-                    <div class="w-40 absolute bottom-0 right-0">
+                    <div class="lg:w-3/5 w-2/5 absolute bottom-0 right-0">
                         <img src="c2-assets/vegetable-offer.png" alt="">
                     </div>
                 </div>
 
                 <!-- offer list column -->
-                <div class="grid lg:grid-cols-3 col-span-2 gap-2 grid-cols-2"> 
+                <div class="grid lg:grid-cols-3 lg:max-w-full col-span-2 gap-2 grid-cols-2 sm:max-w-screen-sm w-[95%] mx-auto"> 
 
                      <!-- first row -->
                     <div class="flex bg-white rounded-lg space-x-6 h-24">
@@ -272,31 +296,31 @@
          </section>
 
          <!-- arrivals section -->
-          <section class="lg:max-w-screen-lg mx-auto my-20 space-y-8">
+          <section class="lg:max-w-screen-lg mx-auto my-20 space-y-8 sm:max-w-screen-sm max-w-[95%]">
             <h1 class="text-2xl font-semibold text-green-600">Arrival & Offers</h1>
 
-         <div class= "lg:space-x-4 sm:flex-col lg:flex lg:flex-row ">
+         <div class= "lg:space-x-4 sm:flex-col lg:flex lg:flex-row lg:space-y-0 space-y-5">
 
-                <div class="lg:w-3/5 sm:w-[90%] bg-[#115414] flex rounded-xl justify-around ">
-                <div class="mx-5 my-10 space-y-4">
-                    <img class="w-40" src="c2-assets/dawat-logo.png" alt="">
-                    <p class="bg-[#63B76D] rounded-xl text-white px-6 py-3">Cook Exotic Dishes</p>
-                    <h1 class="font-bold text-2xl text-white">UP to 20% OFF</h1>
+                <div class="lg:w-3/5 w-[90%] bg-[#115414] flex rounded-xl lg:justify-around ">
+                <div class="mx-5 my-10 space-y-4 ">
+                    <img class="lg:w-40 w-3/5" src="c2-assets/dawat-logo.png" alt="">
+                    <p class="bg-[#63B76D] rounded-xl text-white lg:px-6 px-3 lg:py-3 py-1 ">Cook Exotic Dishes</p>
+                    <h1 class="font-bold lg:text-2xl text-white">UP to 20% OFF</h1>
                 </div>
-                <div class="w-64 mt-8 ">
+                <div class="lg:w-64 w-3/5 mt-8 ">
                     <img src="c2-assets/dawat-mock-up.png" alt="">
                 </div>
 
             </div>
 
-            <div class="bg-[#102861] flex rounded-xl sm:w-[90%] justify-around">
-                <div class="mx-5 my-10 space-y-6">
-                    <img class="w-16" src="c2-assets/india-gate-logo.png" alt="">
+            <div class="bg-[#102861] flex rounded-xl lg:w-2/5 w-[90%] justify-around">
+                <div class="mx-5 my-10 lg:space-y-6 space-y-2">
+                    <img class="lg:w-16 w-2/5" src="c2-assets/india-gate-logo.png" alt="">
                     <p class="bg-[#2A4D97] rounded-xl text-white px-3 py-3">World’s No.1 Rice</p>
-                    <h1 class="font-bold text-2xl text-white">UP to 40% OFF</h1>
+                    <h1 class="font-bold lg:text-2xl text-white">UP to 40% OFF</h1>
                 </div>
-                <div class="w-32 mt-10 mr-3">
-                    <img src="c2-assets/india-gate-mock-up.png" alt="">
+                <div class="lg:w-32 w-1/3 mt-10 mr-3">
+                    <img  src="c2-assets/india-gate-mock-up.png" alt="">
                 </div>
             </div>
          </div>
@@ -304,7 +328,7 @@
           </section>
 
           <!-- FAQ section -->
-          <section class="lg:max-w-screen-lg mx-auto lg:my-10 lg:mb-56 mb-56">
+          <section class="lg:max-w-screen-lg mx-auto lg:my-10 lg:mb-56 mb-56 sm:max-w-screen-sm max-w-[95%]">
             <h1 class="text-3xl font-semibold text-green-600 mb-8 ml-2">FAQs</h1>
             <div class="collapse collapse-plus bg-base-200">
                 <input type="radio" name="my-accordion-3" checked="checked" />
@@ -334,7 +358,7 @@
     <footer class=" bg-green-700">
 
        <!-- news subscription -->
-        <section class="grid grid-cols-2 bg-[#EFEBE3] lg:max-w-screen-lg mx-auto my-8 rounded-xl -translate-y-1/2 ">
+        <section class="grid lg:grid-cols-2 bg-[#EFEBE3] lg:max-w-screen-lg mx-auto lg:my-8 rounded-xl lg:-translate-y-1/2 -translate-y-1/3 sm:max-w-screen-sm max-w-[95%]">
             <div class="w-3/5 mx-auto my-5">
                 <img src="c2-assets/vegetable-busket.png" alt="">
             </div>
@@ -347,24 +371,24 @@
            </section>
 
          <!-- footer section -->
-        <div class="grid grid-cols-3 text-white lg:max-w-screen-lg mx-auto pb-20 ">
-            <div class="mx-auto space-y-3">
+        <div class="grid lg:grid-cols-3 gap-10 text-white lg:max-w-screen-lg lg:mx-auto lg:pb-20 pb-16 mx-8 ">
+            <div class="lg:mx-auto space-y-3">
                 <img src="c2-assets/logo-footer.png" alt="">
                 <p class="font-light">Discover a world of treats, toys, and <br>
                      groceries handpicked for your family & friends</p>
             </div>
-            <div class="mx-auto">
+            <div class="lg:mx-auto">
                 <ul class=" space-y-5">
                     <li><a href="">Product</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Contact us</a></li>
                 </ul>
             </div>
-            <div class="mx-auto space-y-3">
+            <div class="lg:mx-auto space-y-3">
                 <div>
                     <h1>Follow Us</h1>
                 </div>
-                <div class="grid grid-cols-4 gap-6 w-2/3 ">
+                <div class="lg:grid lg:grid-cols-4 flex gap-5 lg:gap-6 lg:w-2/3 ">
                 
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
