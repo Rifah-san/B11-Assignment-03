@@ -49,54 +49,50 @@
     <header class=" bg-gradient-to-t from-[#EFEBE3] to-white">
 
         <!-- navbar -->
-        <section class="lg:max-w-screen-lg mx-auto">
-            <nav>
-                <div class="navbar ">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
-                        </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        </ul>
-                      </div>
-                      <div class="w-28">
-                        <img src="c2-assets/logo-header.png" alt=""></div>
-                      
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1">
-                        <li><a>Product</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Contact us</a></li>
-                        
-                      </ul>
-                    </div>
-                    <div class="navbar-end space-x-5">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      <a class="btn btn-outline btn-success btn-xs sm:btn-sm md:btn-md ">Login</a>
-                      <a class="btn btn-success text-white btn-xs sm:btn-sm md:btn-md ">Register</a>
-                    </div>
-                  </div>
-            </nav>
-        </section>
+        <div class="navbar bg-white">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Product</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl"><img src="c2-assets/logo-header.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa-solid fa-magnifying-glass hidden lg:block  " ></i>
+                <i class="fa-solid fa-cart-shopping    hidden lg:block  "></i>
+              <a class="btn btn-outline btn-success    hidden lg:block ">Login</a>
+              <a class="btn btn-success text-white     hidden lg:block">Register</a>
+            </div>
+          </div>
 
         <!-- banner section -->
-         <section class="mt-20 lg:max-w-screen-lg mx-auto">
+         <section class="mt-20 lg:max-w-screen-lg lg:mx-auto">
             <div class="space-y-8 mx-auto text-center">
                 <div class="w-3/6 space-y-8 mx-auto">
                     <h1 class="font-semibold text-4xl">Freshness 
@@ -112,13 +108,13 @@
         <section class="my-24 lg:max-w-screen-lg mx-auto space-y-8">
             <h1 class="text-green-600 font-semibold text-2xl">Services</h1>
             <!-- card container -->
-            <div class="grid grid-cols-3 space-x-5">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-8 lg:space-x-5">
 
                 <!-- card-1 -->
                 <div class="bg-[#EFEBE3] text-center px-3 py-8 space-y-3 rounded-lg">
                     <div class="avatar">
-                        <div class="w-24 rounded-full bg-white">
-                          <img class="w-2/3" src="c2-assets/service.png" />
+                        <div class="bg-white w-24 border-white border-8 rounded-full">
+                          <img class="object-cover " src="c2-assets/service.png" />
                         </div>
                     </div>
                     <h1 class="font-semibold">24/7 Services </h1>
@@ -128,7 +124,7 @@
                 <!-- card-2 -->
                 <div class="bg-[#EFEBE3] text-center px-3 py-8 space-y-3 rounded-lg">
                     <div class="avatar">
-                        <div class="w-24 rounded-full bg-white">
+                        <div class="bg-white w-24 border-white border-8 rounded-full">
                           <img src="c2-assets/delivery.png" />
                         </div>
                     </div>
@@ -139,7 +135,7 @@
                 <!-- card-3 -->
                 <div class="bg-[#EFEBE3] text-center px-3 py-8 space-y-3 rounded-lg">
                     <div class="avatar"> 
-                        <div class="w-24 rounded-full bg-white">
+                        <div class="bg-white w-24 border-white border-8 rounded-full">
                           <img src="c2-assets/healthy.png" />
                         </div>
                     </div>
@@ -154,7 +150,7 @@
             <h1 class="lg:max-w-screen-lg mx-auto mb-5 text-2xl font-semibold text-green-600">Popular Products</h1>
             
              <!-- grid container column-2 -->
-            <div class="grid grid-cols-3 gap-3 lg:max-w-screen-lg mx-auto">
+            <div class="grid lg:grid-cols-3 gap-3 sm:grid-cols-1 lg:max-w-screen-lg mx-auto">
 
                 <!-- discount column -->
                 <div class="bg-gradient-to-br from-green-500 to-white relative rounded-xl">    
@@ -169,7 +165,7 @@
                 </div>
 
                 <!-- offer list column -->
-                <div class="grid grid-cols-3 col-span-2 gap-2">
+                <div class="grid lg:grid-cols-3 col-span-2 gap-2 grid-cols-2"> 
 
                      <!-- first row -->
                     <div class="flex bg-white rounded-lg space-x-6 h-24">
@@ -256,7 +252,7 @@
                             <p class="text-sm font-semibold">$39.99</p>
                         </div>
                     </div>    
-                    <div class="flex bg-white rounded-lg space-x-6 h-24">
+                    <div class="flex bg-white rounded-lg space-x-6 h-24 ">
                         <div class="w-16">
                             <img class="mx-3 my-3" src="c2-assets/Group 16onion.png" alt="">
                         </div>
@@ -279,9 +275,9 @@
           <section class="lg:max-w-screen-lg mx-auto my-20 space-y-8">
             <h1 class="text-2xl font-semibold text-green-600">Arrival & Offers</h1>
 
-         <div class= "space-x-4 flex">
+         <div class= "lg:space-x-4 sm:flex-col lg:flex lg:flex-row ">
 
-                <div class="w-3/5 bg-[#115414] flex rounded-xl justify-around ">
+                <div class="lg:w-3/5 sm:w-[90%] bg-[#115414] flex rounded-xl justify-around ">
                 <div class="mx-5 my-10 space-y-4">
                     <img class="w-40" src="c2-assets/dawat-logo.png" alt="">
                     <p class="bg-[#63B76D] rounded-xl text-white px-6 py-3">Cook Exotic Dishes</p>
@@ -293,7 +289,7 @@
 
             </div>
 
-            <div class="bg-[#102861] flex rounded-xl justify-around">
+            <div class="bg-[#102861] flex rounded-xl sm:w-[90%] justify-around">
                 <div class="mx-5 my-10 space-y-6">
                     <img class="w-16" src="c2-assets/india-gate-logo.png" alt="">
                     <p class="bg-[#2A4D97] rounded-xl text-white px-3 py-3">World’s No.1 Rice</p>
@@ -308,7 +304,7 @@
           </section>
 
           <!-- FAQ section -->
-          <section class="lg:max-w-screen-lg mx-auto my-10 lg:mb-56">
+          <section class="lg:max-w-screen-lg mx-auto lg:my-10 lg:mb-56 mb-56">
             <h1 class="text-3xl font-semibold text-green-600 mb-8 ml-2">FAQs</h1>
             <div class="collapse collapse-plus bg-base-200">
                 <input type="radio" name="my-accordion-3" checked="checked" />
